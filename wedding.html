@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wedding Invitation</title>
+<style>
+body {
+  background: #fff0f3;
+  font-family: Georgia;
+  text-align: center;
+  padding: 20px;
+}
+.card {
+  background: white;
+  border: 5px double #c08b45;
+  padding: 30px 15px;
+  max-width: 450px;
+  margin: auto;
+  border-radius: 15px;
+}
+h1 {
+  color: #a52a45;
+}
+h2 {
+  color: #b8860b;
+}
+button {
+  background: #a52a45;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h2>Wedding Invitation</h2>
+<p>With the blessings of our family</p>
+<h1>Wedding Ceremony</h1>
+
+<h2>Urvashi Name</h2>
+<p>❤️</p>
+<h2>Vivek Name</h2>
+
+<p>Request the pleasure of your company</p>
+
+<h3>Date: 14 February 2035</h3>
+<h3>Time: 7:00 PM</h3>
+<p>Venue: Mumbai</p>
+
+<p>We look forward to celebrating with you!</p>
+
+<button onclick="shareCard()">Share Invitation</button>
+</div>
+
+<script>
+function shareCard() {
+  navigator.share({
+    title: "Wedding Invitation",
+    text: "You are invited to our wedding!"
+  });
+}
+</script>
+
+</body>
+</html>
